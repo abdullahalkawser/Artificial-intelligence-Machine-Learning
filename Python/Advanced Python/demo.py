@@ -1,6 +1,6 @@
 print('hellow advance python')
 
-import requests
+
 import threading
 import logging
 import json
