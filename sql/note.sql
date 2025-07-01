@@ -87,3 +87,16 @@ CREATE TABLE table_name (
 column_name1 datatype constraint,
 column_name2 datatype constraint,
 );
+
+Table related Queries
+Select & View ALL columns
+
+SELECT * FROM table_name;
+
+
+Insert
+INSERT INTO table_name
+(colname1, colname2);
+VALUES
+(col1_v1, col2_v1),
+(col1_v2, col2_
