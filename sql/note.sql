@@ -1,4 +1,5 @@
 ✅ Types of SQL Commands
+
 SQL commands are divided into 5 major types based on their functionality:
 
 🔹 1. DDL (Data Definition Language)
@@ -62,3 +63,27 @@ ROLLBACK — Undo changes since the last commit.
 SAVEPOINT — Create savepoints within a transaction.
 
 SET TRANSACTION — Set characteristics for a transaction.
+
+
+
+
+
+ ✅ Database related Queries
+
+
+CREATE DATABASE db_name;
+CREATE DATABASE IF NOT EXISTS db_name;
+
+SHOW DATABASES;
+SHOW TABLES;
+
+DROP DATABASE db_name;
+DROP DATABASE IF EXISTS db_name;
+
+
+
+Table related Queries
+CREATE TABLE table_name (
+column_name1 datatype constraint,
+column_name2 datatype constraint,
+);
