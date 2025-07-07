@@ -99,4 +99,4 @@ INSERT INTO table_name
 (colname1, colname2);
 VALUES
 (col1_v1, col2_v1),
-(col1_v2, col2_
+(col1_v2, col2_)
