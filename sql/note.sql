@@ -174,3 +174,14 @@ To sort in ascending (ASC) or descending order
 
 SELECT col1, col2 FROM table_name
 ORDER BY col_name(s) ASC;
+
+
+
+Aggregate Functions
+
+Aggregare functions perform a calculation on a set of values, and return a single value.
+COUNT( )
+MAX( )
+MIN( )
+SUM( )
+AVG( )
