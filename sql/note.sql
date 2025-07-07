@@ -100,3 +100,77 @@ INSERT INTO table_name
 VALUES
 (col1_v1, col2_v1),
 (col1_v2, col2_)
+
+Primary Key
+Foreign Key
+It is a column (or set of columns) in a table that uniquely identifies each row. (a unique id)
+There is only 1 PK & it should be NOT null.
+
+
+A foreign key is a column (or set of columns) in a table that refers to the primary key in another table.
+FKs can have duplicate & null values
+
+CREATE TABLE table_name (
+    column_name1 datatype PRIMARY KEY,
+    column_name2 datatype,
+    FOREIGN KEY (column_name2) REFERENCES other_table(other_column)
+);
+
+Select in Detail
+used to select any data from the database
+
+Basic Syntax
+SELECT col1, col2 FROM table_name;
+To Select ALL
+SELECT * FROM table_name;
+
+
+To Select Distinct Values
+SELECT DISTINCT col1 FROM table_name;   
+
+Where Clause
+To define some conditions
+SELECT col1, col2 FROM table_name
+WHERE conditions;
+
+
+
+Where Clause
+Using Operators in WHERE
+
+Arithmetic Operators : +(addition) , -(subtraction),
+*(multiplication), /(division), %(modulus)
+Using Operators in WHERE
+Comparison Operators : = (equal to), != (not equal to), > , >=
+, <, <=
+Logical Operators : AND, OR , NOT, IN, BETWEEN, ALL, LIKE, ANY
+Bitwise Operators : & (Bitwise AND), | (Bitwise OR)
+
+
+Operators
+AND (to check for both conditions to be true)
+
+
+
+
+OR (to check for one of the conditions to be true)
+
+Between (selects for a given range)
+
+In (matches any value in the list)
+
+NOT (to negate the given condition)
+
+Limit Clause
+
+Sets an upper limit on number of (tuples)rows to be returned
+
+SELECT col1, col2 FROM table_name
+LIMIT number;
+
+Order By Clause
+
+To sort in ascending (ASC) or descending order
+
+SELECT col1, col2 FROM table_name
+ORDER BY col_name(s) ASC;
