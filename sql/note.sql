@@ -185,3 +185,15 @@ MAX( )
 MIN( )
 SUM( )
 AVG( )
+
+Group By Clause
+Groups rows that have the same values into summary rows.
+It collects data from multiple records and groups the result by one or more column.
+*Generally we use group by with some aggregation function.
+Count number of students in each city
+
+
+Having Clause
+Similar to Where i.e. applies some condition on rows.
+Used when we want to apply any condition after grouping.
+Count number of students in each city where max marks cross 90.
