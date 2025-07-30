@@ -1,1 +1,2 @@
-$ cd "C:/Users/abdul/Downloads/mongosh-2.5.6-win32-x64/mongosh-2.5.6-win32-x64/bin"
+cd "C:/Users/abdul/Downloads/mongosh-2.5.6-win32-x64/mongosh-2.5.6-win32-x64/bin"
+./mongosh.exe
