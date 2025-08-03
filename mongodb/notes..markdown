@@ -134,12 +134,17 @@ db.collection.updateOne(
 
 db.collection.find({ fieldName: { $exists: true } }) $exists হল একটি query operator যা কোনো ফিল্ড ডকুমেন্টে আছে কিনা তা চেক করতে ব্যবহৃত হয়।
 
+ db.users.updateMany({fullTime:{$exists:false}},{$set:{fullTime:true}})
+db.users.updateMany(
+  { fullTime: { $exists: false } },  // Filter: documents where 'fullTime' field does NOT exist
+  { $set: { fullTime: true } }       // Update: add 'fullTime' field and set it to true
+)
+
 
 db.users.find({
   age: { $exists: true, $gte: 23 }
 })
 📌 অর্থ: age আছে, এবং সেটা ২৩ বা তার বেশি।
-
 
 
 
@@ -162,6 +167,11 @@ db.users.deleteOne({ name: "Abdullah" })
 ```js
 db.users.deleteMany({ age: { $gt: 30 } })
 ```
+
+students কালেকশনের মধ্যে যেসব ডকুমেন্টে registerdate ফিল্ড নাই,
+ সেগুলো একসাথে ডিলিট করে দেবে।
+db.students.deleteMany({ registerdate: { $exists: false } })
+
 
 ---
 
