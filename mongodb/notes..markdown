@@ -299,6 +299,96 @@ db.students.find({
 
 ---
 
+MongoDB Index Example with Comment (English + Bangla)
+
+// Create an index on the "name" field (ascending order)
+db.users.createIndex({ name: 1 })
+
+// 🔍 এটি "name" ফিল্ডের উপর ইনডেক্স তৈরি করবে যাতে name দিয়ে দ্রুত সার্চ করা যায়।
+
+
+ 2. Single Field Index (Descending)
+// Create an index on the "age" field (descending order)
+db.users.createIndex({ age: -1 })
+
+// 🔍 এটি age ফিল্ডে descending (বড় থেকে ছোট) ইনডেক্স তৈরি করবে,
+// যেন বয়স অনুযায়ী descending ভাবে sort করা সহজ হয়।
+
+
+ Compound Index
+
+ // Create index on both "name" and "age" fields
+db.users.createIndex({ name: 1, age: -1 })
+
+// 🔍 compound index: প্রথমে name দিয়ে এবং তারপর age দিয়ে ইনডেক্স কাজ করবে।
+
+
+Multikey Index (Array field)
+
+// Suppose each user has an array of skills
+db.users.createIndex({ skills: 1 })
+
+// 🔍 skills যদি একটি অ্যারে হয় (["Java", "Python"]), এটি ইনডেক্স হয়ে যাবে multikey index হিসাবে।
+
+
+Text Index (Full-text Search)
+
+// Create a text index on a field "bio"
+db.users.createIndex({ bio: "text" })
+
+// 🔍 bio ফিল্ডে text search (যেমন: $text operator) করার জন্য text index দরকার।
+
+ Hashed Index
+
+ // Create a hashed index on user_id (useful for sharding)
+db.users.createIndex({ user_id: "hashed" })
+
+// 🔍 hashed index শার্ডিং করার জন্য ব্যবহার হয়,
+// যেখানে ডেটা সমভাবে বিভক্ত করতে হয়।
+
+ Wildcard Index
+ // Create wildcard index on all sub-fields of documents
+db.users.createIndex({ "$**": 1 })
+
+// 🔍 ডায়নামিক বা অপরিচিত ফিল্ডেও ইনডেক্স করা যায়, বিশেষ করে যেসব ডেটার স্ট্রাকচার ভিন্ন।
+
+
+ Show All Indexes
+ db.users.getIndexes()
+
+// 🔍 এই কমান্ড দিয়ে আপনি দেখতে পারবেন, কোন কোন ইনডেক্স তৈরি করা হয়েছে।
+
+❌ Drop Index
+
+// Drop index by name
+db.users.dropIndex("name_1")
+
+// 🔍 name_1 হল ইনডেক্সের নাম, যেটা আপনি getIndexes() দিয়ে দেখে নিতে পারেন।
+
+
+❌ Drop All Indexes
+db.users.dropIndexes()
+
+// 🔍 এটা দিয়ে সব ইনডেক্স মুছে যাবে, শুধু _id ইনডেক্স ছাড়া।
+
+
+
+Performance Tip:
+js
+Copy
+Edit
+db.users.find({ name: "Anu" }).explain("executionStats")
+
+// 🔍 explain("executionStats") দিয়ে দেখা যায়, কোয়েরি ইনডেক্স ব্যবহার করেছে কিনা।
+
+
+
+
+
+
+
+
+
 
 cd "C:/Users/abdul/Downloads/mongosh-2.5.6-win32-x64/mongosh-2.5.6-win32-x64/bin"
 ./mongosh.exe
