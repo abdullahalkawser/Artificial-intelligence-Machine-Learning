@@ -91,3 +91,158 @@ Calculation:
 [1×5 + 2×7, 1×6 + 2×8] => [19, 22]
 [3×5 + 4×7, 3×6 + 4×8] => [43, 50]
 
+
+
+
+
+
+
+
+
+# 📘 NumPy Multidimensional Arrays (ndarray) – বাংলা-ইংলিশ নোট
+
+NumPy-র সবচেয়ে important feature হলো এর **ndarray (N-dimensional array)**। এটা এক ধরণের array object যেটা multiple dimensions handle করতে পারে – 1D, 2D, 3D বা তার চেয়েও বেশি।
+
+---
+
+## 🧠 What is an ndarray?
+
+NumPy-এর `ndarray` হচ্ছে multi-dimensional array যার মধ্যে সব elements একি data type-এর হয়।
+
+```python
+import numpy as np
+
+arr = np.array([1, 2, 3])
+print(arr)
+```
+
+🔹 Output:
+```
+[1 2 3]
+```
+
+এখানে `arr` হলো 1-Dimensional array।
+
+---
+
+## 🌀 Dimensions Explained
+
+### ✅ 1-D Array
+
+একটা সাধারণ লিস্টের মত।
+
+```python
+arr1d = np.array([10, 20, 30])
+print(arr1d)
+```
+
+🔹 Shape: `(3,)` → 3 items, 1 dimension
+
+---
+
+### ✅ 2-D Array (Matrix)
+
+Matrix-এর মতো Row এবং Column থাকে।
+
+```python
+arr2d = np.array([[1, 2, 3],
+                  [4, 5, 6]])
+print(arr2d)
+```
+
+🔹 Shape: `(2, 3)` → 2 rows, 3 columns
+
+---
+
+### ✅ 3-D Array (Tensor)
+
+Multiple 2D arrays এর collection
+
+```python
+arr3d = np.array([
+    [[1, 2], [3, 4]],
+    [[5, 6], [7, 8]]
+])
+print(arr3d)
+```
+
+🔹 Shape: `(2, 2, 2)` → 2 matrices, each 2x2
+
+---
+
+## 🔍 Important Attributes
+
+| Attribute        | Description                           | উদাহরণ |
+|------------------|---------------------------------------|--------|
+| `ndim`           | Dimension count                       | `arr.ndim` |
+| `shape`          | Tuple of dimensions (rows, cols, etc) | `arr.shape` |
+| `size`           | Total number of elements               | `arr.size` |
+| `dtype`          | Data type of elements                 | `arr.dtype` |
+
+---
+
+### 🧪 Example:
+
+```python
+arr = np.array([[10, 20, 30], [40, 50, 60]])
+print("Dimension:", arr.ndim)
+print("Shape:", arr.shape)
+print("Size:", arr.size)
+print("Data Type:", arr.dtype)
+```
+
+🔹 Output:
+```
+Dimension: 2
+Shape: (2, 3)
+Size: 6
+Data Type: int64
+```
+
+---
+
+## 🛠 Creating Arrays with Functions
+
+| Function        | Description                         |
+|------------------|-------------------------------------|
+| `np.zeros()`     | All zeros                          |
+| `np.ones()`      | All ones                           |
+| `np.eye()`       | Identity matrix                    |
+| `np.arange()`    | Range array                        |
+| `np.reshape()`   | Reshape the array                  |
+
+```python
+z = np.zeros((2, 3))
+print(z)
+```
+
+🔹 Output:
+```
+[[0. 0. 0.]
+ [0. 0. 0.]]
+```
+
+---
+
+## 🔄 Reshaping Arrays
+
+```python
+a = np.array([1, 2, 3, 4, 5, 6])
+reshaped = a.reshape(2, 3)
+print(reshaped)
+```
+
+🔹 Output:
+```
+[[1 2 3]
+ [4 5 6]]
+```
+
+---
+
+## 🔚 Summary (সারাংশ)
+
+- NumPy arrays can be 1D, 2D, 3D বা তারও বেশি dimension এর।
+- সব elements এর same data type থাকতে হয়।
+- Useful attributes: `ndim`, `shape`, `size`, `dtype`
+- You can create arrays using `array()`, `zeros()`, `ones()`, `arange()`, `reshape()` etc.
