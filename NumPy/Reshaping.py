@@ -30,3 +30,28 @@ row_vec2 = arr[None, :]    # same as np.newaxis
 col_vec2 = arr[:, None]    # same as np.newaxis
 
 print(row_vec2.shape, col_vec2.shape)
+
+
+
+
+
+# flatten() দিয়ে multi-dimensional array কে 1D array এ রূপান্তর করা হয়।
+
+# এটি নতুন array রিটার্ন করে, মূল array অপরিবর্তিত থাকে।
+
+# সাধারণত সব element এক জায়গায় নিয়ে কাজ করার জন্য ব্যবহার করা হয়।
+
+
+
+arr = np.array([[1, 2, 3],
+                [4, 5, 6]])
+print("Original array:\n", arr)
+
+
+flat_arr = arr.flatten()
+
+print("Original Array:")
+print(arr)
+
+print("Flattened Array:")
+print(flat_arr) 
