@@ -93,3 +93,42 @@ print(df.head())        # প্রথম 5 row
 print(df.columns)       # কলামের নাম
 print(df.info())        # summary
 print(df.describe())    # statistics
+
+
+df.sample() হলো Pandas DataFrame এর একটি ফাংশন যা randomly row(s) select করে।
+
+🔹 Example with your Sample Data
+import pandas as pd
+
+# Read the sample CSV
+df = pd.read_csv("/mnt/data/sample_data.csv")
+
+# Randomly select one row
+random_row = df.sample()
+print(random_row)
+
+
+Output (example, random every time):
+
+      Name  Age  CGPA Dept
+2  Abdullah   21   3.9  CSE
+
+🔹 Select Multiple Random Rows
+df.sample(n=2)   # randomly 2 rows
+
+🔹 Random Rows with Fraction
+df.sample(frac=0.4)  # 40% rows randomly
+
+🔹 Reset Random Seed
+df.sample(n=2, random_state=42)  # deterministic random selection
+
+
+Bangla Summary:
+
+df.sample() → এক বা একাধিক row randomly select করে।
+
+n → number of rows
+
+frac → fraction of rows
+
+random_state → নির্দিষ্ট seed দিয়ে same rows বের করা
