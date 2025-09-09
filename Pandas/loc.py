@@ -1,12 +1,12 @@
-loc কী?
+# loc কী?
 
-English:
-loc is used to access and modify data in Pandas DataFrame by label/index.
+# English:
+# loc is used to access and modify data in Pandas DataFrame by label/index.
 
-বাংলায়:
-loc দিয়ে আমরা DataFrame এর নির্দিষ্ট row, column খুঁজে বের করে update করতে পারি।
+# বাংলায়:
+# loc দিয়ে আমরা DataFrame এর নির্দিষ্ট row, column খুঁজে বের করে update করতে পারি।
 
-🔹 Example Dataset
+# 🔹 Example Dataset
 import pandas as pd
 
 data = {
@@ -18,45 +18,45 @@ data = {
 df = pd.DataFrame(data)
 print(df)
 
+# 
+# ✅ Output:
 
-✅ Output:
+#    ID    Name  Score
+# 0   1   Anisa     85
+# 1   2  Kawser     90
+# 2   3    Rafi     75
+# 3   4    Sumi     88
 
-   ID    Name  Score
-0   1   Anisa     85
-1   2  Kawser     90
-2   3    Rafi     75
-3   4    Sumi     88
-
-🔹 Updating Data using loc
-1. Update single value
+# 🔹 Updating Data using loc
+# 1. Update single value
 # Update Rafi's Score → 95
 df.loc[df["Name"] == "Rafi", "Score"] = 95
 print(df)
 
 
-✅ Output:
+# ✅ Output:
 
-   ID    Name  Score
-0   1   Anisa     85
-1   2  Kawser     90
-2   3    Rafi     95
-3   4    Sumi     88
+#    ID    Name  Score
+# 0   1   Anisa     85
+# 1   2  Kawser     90
+# 2   3    Rafi     95
+# 3   4    Sumi     88
 
-2. Update multiple columns in a row
+# 2. Update multiple columns in a row
 # Update Sumi's Name and Score
 df.loc[df["ID"] == 4, ["Name", "Score"]] = ["Sumaiya", 92]
 print(df)
 
 
-✅ Output:
+# ✅ Output:
 
-   ID     Name  Score
-0   1    Anisa     85
-1   2   Kawser     90
-2   3     Rafi     95
-3   4  Sumaiya     92
+#    ID     Name  Score
+# 0   1    Anisa     85
+# 1   2   Kawser     90
+# 2   3     Rafi     95
+# 3   4  Sumaiya     92
 
-3. Conditional Update
+# 3. Conditional Update
 # Increase all Score by 5 where Score < 90
 df.loc[df["Score"] < 90, "Score"] = df["Score"] + 5
 print(df)
