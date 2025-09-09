@@ -62,62 +62,64 @@ df.loc[df["Score"] < 90, "Score"] = df["Score"] + 5
 print(df)
 
 
-👉 এখানে শুধু যাদের Score 90 এর নিচে, তাদের স্কোর ৫ বাড়বে।
+# 👉 এখানে শুধু যাদের Score 90 এর নিচে, তাদের স্কোর ৫ বাড়বে।
 
-4. Update entire column
+# 4. Update entire column
 # Add 10 bonus to all Score
 df.loc[:, "Score"] = df["Score"] + 10
 print(df)
 
-🔹 Summary (Bangla + English)
+# 🔹 Summary (Bangla + English)
 
-df.loc[row_condition, "Column"] = new_value → single update
+# df.loc[row_condition, "Column"] = new_value → single update
 
-df.loc[row_condition, ["Col1", "Col2"]] = [val1, val2] → multiple update
+# df.loc[row_condition, ["Col1", "Col2"]] = [val1, val2] → multiple update
 
-df.loc[:, "Column"] = ... → পুরো column update
+# df.loc[:, "Column"] = ... → পুরো column update
 
-👉 চাইলে আমি তোমাকে Practice Tasks বানিয়ে দিতে পারি (যেমন "90 এর নিচে নামকে 'Failed' set করা", "ID odd হলে score +3 করা") — এগুলো করলে loc একদম মাস্টারি হয়ে যাবে।
+# 👉 চাইলে আমি তোমাকে Practice Tasks বানিয়ে দিতে পারি (যেমন "90 এর নিচে নামকে 'Failed' set করা", "ID odd হলে score +3 করা") — এগুলো করলে loc একদম মাস্টারি হয়ে যাবে।
 
-চাও কি আমি সেই Practice Task List বানিয়ে দিই?
+# চাও কি আমি সেই Practice Task List বানিয়ে দিই?
 
-You said:
-dew
-ChatGPT said:
+# You said:
+# dew
+# ChatGPT said:
 
-ঠিক আছে ভাই 😃 এখন তোমার জন্য Pandas loc দিয়ে Data Update করার Practice Tasks বানিয়ে দিলাম।
+# ঠিক আছে ভাই 😃 এখন তোমার জন্য Pandas loc দিয়ে Data Update করার Practice Tasks বানিয়ে দিলাম।
 
-📝 Practice Tasks: Updating Data using loc
-✅ Task 1: Single Value Update
+# 📝 Practice Tasks: Updating Data using loc
+# ✅ Task 1: Single Value Update
 
-একটা DataFrame বানাও, যেখানে ID, Name, Score থাকবে।
-👉 loc দিয়ে ৩rd student-এর Score = 100 করে দাও।
+# একটা DataFrame বানাও, যেখানে ID, Name, Score থাকবে।
+# 👉 loc দিয়ে ৩rd student-এর Score = 100 করে দাও।
 
-✅ Task 2: Multiple Column Update
+# ✅ Task 2: Multiple Column Update
 
-👉 ID == 2 হলে Name = "Updated" আর Score = 80 set করো।
+# 👉 ID == 2 হলে Name = "Updated" আর Score = 80 set করো।
 
-✅ Task 3: Conditional Update
+# ✅ Task 3: Conditional Update
 
-👉 যাদের Score < 90, তাদের Score + 5 করো।
+# 👉 যাদের Score < 90, তাদের Score + 5 করো।
 
-✅ Task 4: Update Based on Multiple Conditions
+# ✅ Task 4: Update Based on Multiple Conditions
 
-👉 যাদের Score > 95 AND Name starts with "A", তাদের Score = 99 করে দাও।
+# 👉 যাদের Score > 95 AND Name starts with "A", তাদের Score = 99 করে দাও।
 
-✅ Task 5: Update Entire Column
+# ✅ Task 5: Update Entire Column
 
-👉 সব Student এর Score-এ 10 bonus যোগ করো।
+# 👉 সব Student এর Score-এ 10 bonus যোগ করো।
 
-✅ Task 6: Replace Failed Students
+# ✅ Task 6: Replace Failed Students
 
-👉 যাদের Score < 60, তাদের Name column-এ "Failed" লিখে দাও।
+# 👉 যাদের Score < 60, তাদের Name column-এ "Failed" লিখে দাও।
 
-✅ Task 7: Bulk Update with loc
+# ✅ Task 7: Bulk Update with loc
 
-👉 ID odd হলে Score + 3, আর ID even হলে Score + 7 করে দাও।
+# 👉 ID odd হলে Score + 3, আর ID even হলে Score + 7 করে দাও।
 
-🔹 Example Starter Code
+# 🔹 Example Starter Code
+
+
 import pandas as pd
 
 data = {
@@ -130,3 +132,6 @@ df = pd.DataFrame(data)
 print("Original DataFrame:\n", df)
 
 # 👉 এখানে তোমার Practice Task গুলো
+
+
+
