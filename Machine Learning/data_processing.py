@@ -3,14 +3,15 @@ import pandas as pd
 daata = pd.read_csv("data.csv")
 
 
-
-
 df = pd.DataFrame(daata)
 
-print(df.isnull().sum())
+
+df['Age'] = df['Age'].fillna(df['Age'].mean())
+df['Salary'] = df['Salary'].fillna(df['Salary'].mean())
 
 # print(df.dropna())
-# print(df)
+print(df)
+print(df.isnull().sum())
 
 
 
