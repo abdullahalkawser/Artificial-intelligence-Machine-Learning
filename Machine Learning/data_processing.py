@@ -7,60 +7,10 @@ daata = pd.read_csv("data.csv")
 
 df = pd.DataFrame(daata)
 
-# print(df.isnull().sum())
+print(df.isnull().sum())
 
-print(df.dropna())
+# print(df.dropna())
 # print(df)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
