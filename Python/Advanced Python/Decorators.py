@@ -15,6 +15,7 @@ def time_it(func):
 def calculator(numbr):
     result = []
     for i in range(1, numbr + 1):
+         
         result.append(i * i)  # Square of i
     return result
 
