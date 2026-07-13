@@ -10,7 +10,7 @@
 def get_first_element(arr):
     return arr[0]
 
-#   🎯 No matter how big the array is, you're just accessing the first element.
+#  🎯 No matter how big the array is, you're just accessing the first element.
 
 # 👉 Time doesn’t increase with input size → O(1)🎯 তুমি শুধু অ্যারের প্রথম উপাদান নিচ্ছো।
 #🔍 ইনপুট ১০০ হোক বা ১০০০০, সময় একই — O(1)
