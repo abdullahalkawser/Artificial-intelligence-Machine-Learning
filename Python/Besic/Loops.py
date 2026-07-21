@@ -1,4 +1,5 @@
-# Looping through a list
+# Looping through a list 
+
 fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     print(fruit)
@@ -11,7 +12,9 @@ while count <= 5:
     count += 1
 
 #3. Nested loops
+
 # Nested loop: printing a matrix
+
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 for row in matrix:
     for num in row:
@@ -27,7 +30,9 @@ for i in range(10):
     print(i)
 
 # Skipping even numbers
+
 for i in range(10):
+
     if i % 2 == 0:
         continue  # Skips the current iteration if i is even
     print(i)

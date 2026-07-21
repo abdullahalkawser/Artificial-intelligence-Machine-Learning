@@ -18,9 +18,6 @@ cols_to_show = ['Name', 'Gender', 'City', 'Passed', 'Gender_Encoded','Passed_Enc
 
 
 
-
-
-
 # Pandas ব্যবহার করে City column এর One Hot Encoding করা হচ্ছে
 df_encoded = pd.get_dummies(df, columns=['City'],dtype=int)
 

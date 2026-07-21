@@ -2,6 +2,8 @@ import argparse
 
 if __name__ == "__main__":
     # ArgumentParser অবজেক্ট তৈরি, যা কমান্ড লাইন আর্গুমেন্টগুলো পড়বে
+
+
     parser = argparse.ArgumentParser()
 
     # প্রথম positional আর্গুমেন্ট: প্রথম সংখ্যা
@@ -14,14 +16,16 @@ if __name__ == "__main__":
     parser.add_argument("operetion", help="Operation to perform (add, sub, mul, div)")
 
     # আর্গুমেন্টগুলো পার্স করছি (command line থেকে নেওয়া)
+    s
     args = parser.parse_args()
+
 
     # আর্গুমেন্ট থেকে তিন সংখ্যাকে ইন্টে কনভার্ট করছি
     n1 = int(args.Number1)
     n2 = int(args.Number2)
     n3 = int(args.Number3)
 
-    result = None
+    result = None;
 
     # অপারেশন অনুযায়ী কাজ করা
     if args.operetion == "add":
@@ -31,11 +35,20 @@ if __name__ == "__main__":
     elif args.operetion == "mul":
         result = n1 * n2 * n3
     elif args.operetion == "div":
+
+
+
+
         # এখানে ভাগ করার জন্য কোড লেখা দরকার, নিচে দেখাবে
+
+
         if n2 == 0 or n3 == 0:
             print("ভাগ করার সময় শূন্য দিয়ে ভাগ করা যাবে না।")
             exit(1)
         result = n1 / n2 / n3
+
+
+
     else:
         print("Invalid operation")  # অপারেশন ভুল হলে মেসেজ
         exit(1)
@@ -64,4 +77,7 @@ if args.verbose:
 if args.age:
     print(f"Hello {args.name}! You are {args.age} years old.")
 else:
-    print(f"Hello {args.name}!")
+    print(f"Hello {args.name}!") 
+
+   # this code snippet demonstrates how to use the argparse module in Python to create a command-line interface that accepts three numbers and an operation (add, sub, mul, div) as arguments. It performs the specified operation on the numbers and prints the result. Additionally, it includes another example of using argparse to greet a user with their name and optional age, with a verbose mode for additional output.
+

@@ -73,6 +73,7 @@ y = df["scores"]
 # 3. Data কে train এবং test এ ভাগ করা
 # -----------------------------
 # test_size=0.2 মানে 20% test, 80% train
+
 # random_state=42 মানে split reproducible হবে
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 

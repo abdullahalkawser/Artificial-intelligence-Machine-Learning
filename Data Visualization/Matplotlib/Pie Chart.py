@@ -2,12 +2,12 @@ import matplotlib.pyplot as plt
 
 # ১. প্রতিটি ক্যাটাগরির মান (যেমন শতাংশ বা সংখ্যা)
 sizes = [40, 25, 20, 15]
-labels = ['ai', 'al', 'ml', 'gen ai']
+labels = ['ai', 'al', 'ml', 'gen ai', 'data science', 'python', 'java', 'c++']
 
-# ২. Pie চার্ট আঁকা
+# ২. Pie চার্ট আঁকা 
 plt.pie(
     sizes,
-    labels=labels,        # slice-এর নাম
+    labels=labels,        # slice-এর নাম this 
     autopct='%1.1f%%',    # শতাংশ দেখাবে (1 decimal)
     startangle=90,        # চার্ট কোন এঙ্গেল থেকে শুরু হবে
     shadow=True,          # ছায়া যোগ করা
@@ -23,6 +23,10 @@ plt.axis('equal')
 
 # ৫. চার্ট দেখানো
 plt.show()
+
+
+
+
 
 
 
