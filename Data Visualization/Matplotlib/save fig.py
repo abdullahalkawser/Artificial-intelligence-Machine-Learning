@@ -20,4 +20,5 @@ plt.plot(
 
 plt.savefig('plots.png', dpi=100 )  # উচ্চ রেজোলিউশনে সেভ করুন
 plt.show()
+plt.close()  # মেমোরি মুক্ত করতে প্লট বন্ধ করুন
 

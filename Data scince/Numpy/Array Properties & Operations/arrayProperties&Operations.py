@@ -33,3 +33,50 @@ print("Array Item Size:", array.itemsize)
 
 print("Array Total Bytes:", array.nbytes)
 print ("Array Type:", type(array))
+
+
+
+#astype()  Array কে অন্য Data Type এ Convert করতে ব্যবহার হয়।
+array = array.astype('float64')
+relst = array.astype('int32')
+
+
+
+print("Array Properties & Operations", relst)
+
+
+
+
+#mathamatical Operations Numpy 
+
+
+arr = np.array([10,20,30,40,50,60])
+print( arr + 10) #add 10 to each element
+print( arr - 10) #sub 10 to each element
+print( arr * 10) #multiply 10 to each element
+print( arr / 10) #divide 10 to each element
+print( arr ** 2) #power of 2 to each element
+print( arr % 10) #modulus 10 to each element
+print( arr // 10) #floor division 10 to each element
+
+
+
+
+#aggegate functions  mean, median, sum, min, max, std, var
+arr = np.array([10,20,30,40,50,60])
+arr = np.sum(arr)   
+
+arr = np.mean(arr)
+arr = np.median(arr)
+arr = np.min(arr)
+arr = np.max(arr)
+arr = np.std(arr)
+arr = np.var(arr)
+
+
+print ("Array Properties & Operations aggeate oapretion ", arr)
+
+
+
+
+
