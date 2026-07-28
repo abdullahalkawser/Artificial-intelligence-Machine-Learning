@@ -34,6 +34,7 @@ print("Array Item Size:", array.itemsize)
 print("Array Total Bytes:", array.nbytes)
 print ("Array Type:", type(array))
 
+#neran us of of this national point of threre 
 
 
 #astype()  Array কে অন্য Data Type এ Convert করতে ব্যবহার হয়।
@@ -66,12 +67,12 @@ print( arr // 10) #floor division 10 to each element
 arr = np.array([10,20,30,40,50,60])
 arr = np.sum(arr)   
 
-arr = np.mean(arr)
-arr = np.median(arr)
-arr = np.min(arr)
-arr = np.max(arr)
-arr = np.std(arr)
-arr = np.var(arr)
+arr = np.mean(arr)#mean use for average of the array
+arr = np.median(arr)#median use for middle value of the array
+arr = np.min(arr)#min use for minimum value of the array
+arr = np.max(arr)#max use for maximum value of the array
+arr = np.std(arr)#std use for standard deviation of the array
+arr = np.var(arr)#var use for variance of the array
 
 
 print ("Array Properties & Operations aggeate oapretion ", arr)
