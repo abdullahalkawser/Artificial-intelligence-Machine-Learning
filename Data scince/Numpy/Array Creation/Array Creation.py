@@ -1,3 +1,4 @@
+
 #array creation python numpy
 
 import numpy as np
@@ -40,6 +41,7 @@ print('Creating an array using np.linspace() function:', array5)
 
 array6 = np.eye(3)
 print('Creating an array using np.eye() function:', array6)
+
 
 
 

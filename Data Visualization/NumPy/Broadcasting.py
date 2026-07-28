@@ -4,6 +4,7 @@ a = np.array([1, 2, 3, 4])
 b = 10
 
 # Scalar addition
+
 c = a + b
 
 print("Array a:", a)
