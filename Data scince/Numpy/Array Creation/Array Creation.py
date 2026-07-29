@@ -72,3 +72,9 @@ print('Creating an array using np.full() function:', array7)
 # ⭐ np.random.rand()
 # ⭐ np.random.randint()
 # ⭐ np.eye()
+
+
+
+
+
+array= np

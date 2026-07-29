@@ -51,6 +51,8 @@ print("Array Properties & Operations", relst)
 #mathamatical Operations Numpy 
 
 
+
+
 arr = np.array([10,20,30,40,50,60])
 print( arr + 10) #add 10 to each element
 print( arr - 10) #sub 10 to each element
@@ -76,6 +78,17 @@ arr = np.var(arr)#var use for variance of the array
 
 
 print ("Array Properties & Operations aggeate oapretion ", arr)
+
+
+
+array = np.array([[10,20,30,40,50,60],
+                    [1,2,3,4,5,6]])
+
+print("Array Properties & Operations og this national issuews of ", array)
+
+
+
+print("all file output done ")
 
 
 
