@@ -53,6 +53,16 @@ print(arrs[1:5])
 
 print(arrs[3:5])
 
+print(arr[:3])
+# Value : 10   20   30   40   50   60
+# Index :  0    1    2    3    4    5
+#           ↑──────────↑
+#         শুরু    Stop = 3 (নেওয়া হবে না)
+
+
+
+print(arr[3:])
+
 
 
 
