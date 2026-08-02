@@ -93,3 +93,50 @@ print('original array:', ab)
 print('split array into 3 parts:', np.split(ab, 3))
 
 
+# 10. append()
+
+# শেষে নতুন Data যোগ করা।
+
+a=np.array([1,2,3])
+
+print(np.append(a,4))
+
+# 11. np.insert()নির্দিষ্ট Position-এ Data যোগ করা।
+
+a=np.array([1,2,4])
+
+print(np.insert(a,2,3,))
+
+
+# 12. delete()
+
+# Data মুছে ফেলা।
+
+a=np.array([1,2,3,4])
+
+print(np.delete(a,2))
+
+# কাজ	NumPy Function
+# Dataset-এর Shape ঠিক করা	reshape()
+# Image কে 1D Vector বানানো	flatten(), ravel()
+# Feature ও Label একত্র করা	concatenate(), hstack()
+# Data Batch তৈরি	vstack()
+# Train/Test Data ভাগ	split()
+# Row ↔ Column পরিবর্তন	transpose()
+# নতুন Data যোগ	append(), insert()
+# অপ্রয়োজনীয় Data বাদ	delete()
+
+
+# সহজে মনে রাখার ট্রিক
+# Function	মনে রাখার উপায়
+# reshape()	Shape পরিবর্তন
+# flatten()	2D → 1D (Copy)
+# ravel()	2D → 1D (View)
+# transpose()	Row ↔ Column
+# concatenate()	Array জোড়া লাগানো
+# vstack()	উপর-নিচে যোগ
+# hstack()	পাশে-পাশে যোগ
+# split()	Array ভাগ
+# append()	শেষে যোগ
+# insert()	মাঝখানে যোগ
+# delete()	Data মুছে ফেলা
