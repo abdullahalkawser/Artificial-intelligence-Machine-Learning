@@ -56,3 +56,17 @@ array2 = np.array([11,12,13,14,15,16,17,18,19,20])
 
 concatenated = np.concatenate((array1, array2))
 print("concatenated array", concatenated)
+
+# 7. vstack() Vertical Stack এটি একাধিক array-কে উপর-নিচ (row-wise) করে যুক্ত করতে ব্যবহার করা হয়।
+
+a=np.array([1,2,3])
+
+b=np.array([4,5,6])
+
+print(np.vstack((a,b)))
+Rahim = np.array([80, 75, 90])
+Karim = np.array([70, 85, 88])
+
+students = np.vstack((Rahim, Karim))
+
+print(students)
