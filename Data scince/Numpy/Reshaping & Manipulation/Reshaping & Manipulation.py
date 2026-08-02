@@ -1,4 +1,6 @@
+
 #Reshaping (Array-এর Shape পরিবর্তন)
+
 #array.reshape(rows, columns)
 import numpy as np
 
@@ -128,6 +130,7 @@ print(np.delete(a,2))
 
 
 # সহজে মনে রাখার ট্রিক
+
 # Function	মনে রাখার উপায়
 # reshape()	Shape পরিবর্তন
 # flatten()	2D → 1D (Copy)
