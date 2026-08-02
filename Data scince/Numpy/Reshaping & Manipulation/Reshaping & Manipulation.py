@@ -37,3 +37,22 @@ arra3 = np.array([[1,2,3,4,5,6],
 print("raow version 2d array ",arra3)
 print("row convert to column   2d array ",arra3.T)
 
+
+# 5. resize() Array-এর Size পরিবর্তন।
+
+d=np.array([1,2,3,4])
+
+d.resize((2,2))
+
+print("change array size",d)
+
+# 6. concatenate()
+
+# দুইটি Array যুক্ত করা।
+
+
+array1 = np.array([1,2,3,4,5,6,7,8,9,10])
+array2 = np.array([11,12,13,14,15,16,17,18,19,20])
+
+concatenated = np.concatenate((array1, array2))
+print("concatenated array", concatenated)
