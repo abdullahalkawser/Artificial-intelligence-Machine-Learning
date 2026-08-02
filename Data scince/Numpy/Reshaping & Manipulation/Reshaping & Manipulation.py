@@ -16,7 +16,7 @@ print(b)
 
 arr = np.array([[1,2,3,4,5,],
                [6,7,8,9,10]])
-print('2d array ',arr);
+print('2d array ',arr)
 
 print("convert 2d array to 1d array with copy ",arr.flatten())
 
@@ -70,3 +70,26 @@ Karim = np.array([70, 85, 88])
 students = np.vstack((Rahim, Karim))
 
 print(students)
+
+# np.hstack() (Horizontal Stack)
+
+# hstack এর পূর্ণরূপ হলো Horizontal Stack।
+
+# এটি একাধিক array-কে পাশাপাশি (column-wise) যুক্ত করতে ব্যবহার করা হয়।
+
+
+
+
+
+f = np.array([1, 2, 3])
+g = np.array([4, 5, 6])
+
+print('add to array  useing hstack:', np.hstack((f, g)))
+
+# 9. split()  Array ভাগ করা।
+
+ab = np.array([1, 2, 3, 4, 5, 6])
+print('original array:', ab)
+print('split array into 3 parts:', np.split(ab, 3))
+
+
