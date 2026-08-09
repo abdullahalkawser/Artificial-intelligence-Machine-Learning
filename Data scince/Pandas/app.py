@@ -1,6 +1,4 @@
 import pandas as pd 
-
-
 data = {
     "name": ["Alice", "Bob", "Charlie", "David"],
     "age": [25, 30, 35, 40],
@@ -10,4 +8,11 @@ data = {
 
 df = pd.DataFrame(data)
 print("Original DataFrame:")
+
+
 print(df)
+# df.to_csv("data.csv", index=False)
+
+df.to_excel("data.xlsx", index=False) #create an excel file
+
+df.to_json("data.json", orient="records") #create a json file
