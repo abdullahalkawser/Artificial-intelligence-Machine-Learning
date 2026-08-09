@@ -19,3 +19,29 @@ print("Original array:", arr)
 print("After multiplying by 2:", reeuslt)
 print("After adding 5:", new_arr)
 print("After squaring:", srr)
+
+
+A = np.array([
+    [1, 2],
+    [3, 4]
+])
+
+B = np.array([
+    [5, 6],
+    [7, 8]
+])
+
+C = A + B
+
+print(C)
+
+
+# একসাথে পুরো matrix-এর calculation হয়েছে।
+
+
+# খুব সহজ Comparison
+# বিষয়	Meaning
+# for loop	এক এক করে কাজ
+# Vectorization	একসাথে অনেক data-এর উপর কাজ
+# Broadcasting	Different shape-এর data কীভাবে operation করবে
+# NumPy	Efficient numerical calculation
