@@ -27,4 +27,8 @@ print(df)
 
 print("\nStatistical Summary of the DataFrame:\n")
 
-print(df.describe())
+# print(df.describe())
+print(df.columns)
+
+print(f"Data Types of the DataFrame:\n{df.dtypes}\n")
+print(f"shape of the DataFrame:\n{df.shape}\n")
