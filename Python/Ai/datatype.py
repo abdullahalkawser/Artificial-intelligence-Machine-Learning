@@ -8,6 +8,7 @@ age = 25;
 
 print("Age:", age)
 print("type of age:", type(age));
+print("Age:", age)
 
 
 
