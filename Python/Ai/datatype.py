@@ -13,6 +13,8 @@ print("Age:", age)
 
 
 
+
+
 #Float (float);
 
 price = 18.90;
@@ -20,6 +22,7 @@ price = 18.90;
 print("Price:", price);
 print("type of price:",type(price))
 
+print("Price:", price)
 
 
 
