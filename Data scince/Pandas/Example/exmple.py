@@ -27,3 +27,11 @@ print(c)
 s= df[df["Age"] > 22]
 print("Rows where Age is greater than 22:")
 print(s)
+
+
+# multiple condition row selection
+m= df[(df["Age"] > 22) & (df["CGPA"] > 3.5)]
+
+h = df[(df["Age"] > 22) | (df["CGPA"] > 3.5)]
+print("Rows where Age is greater than 22 or CGPA is greater than 3.5:")
+print(h)
