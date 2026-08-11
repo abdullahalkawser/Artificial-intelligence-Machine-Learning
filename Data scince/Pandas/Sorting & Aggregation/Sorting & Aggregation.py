@@ -75,5 +75,29 @@ print(df_sorted_multiple)
 
 # এটা real-world dataset-এ অনেক useful।
 
+# 6️⃣ inplace=True
+
+# যদি original DataFrame পরিবর্তন করতে চাও:
+
+df.sort_values("Salary", ascending=False, inplace=True)
+print("\nDataFrame sorted by Salary (descending) with inplace=True:")
+print(df)
+
+sort_values()	Column value অনুযায়ী sort
+sort_index()	Index অনুযায়ী sort
+ascending=True	ছোট → বড়
+ascending=False	বড় → ছোট
+head()	Top rows
+sum()	Total
+mean()	Average
+median()	Middle value
+min()	Minimum
+max()	Maximum
+count()	Count
+std()	Standard deviation
+agg()	Multiple aggregation
+groupby()	Category অনুযায়ী group
+groupby()+agg()	Group-wise summary
+
 
 
