@@ -9,7 +9,7 @@ data = {
 
 df = pd.DataFrame(data)
 
-print(df.isnull())  # Display the   DataFrame with True for missing values and False for non-missing values
+# print(df.isnull())  # Display the   DataFrame with True for missing values and False for non-missing values
 
 # print(df.isna().sum()  )  # Check for missing values in issing Data খুঁজে বের করা — isna() the DataFrame
 
@@ -19,6 +19,27 @@ print(df.isnull())  # Display the   DataFrame with True for missing values and F
 # Value থাকলে → False
 
 
-#spacfic column missing value check
-print(df['Age'].isna().sum())  # Check for missing values in the 'Age' column
 
+#spacfic column missing value check
+# print(df['Age'].isna().sum())  # Check for missing values in the 'Age' column
+
+# 3️⃣ Missing Data বাদ দেওয়া — dropna()
+
+# যদি missing data থাকা পুরো row বাদ দিতে চাও:
+
+# axis=0 → row Missing থাকা row remove
+# axis=1 → column Missing থাকা column remove
+ 
+# new_df = df.dropna(axis= 0,inplace= True)  # Drop rows with any missing values inparams=True will modify the original DataFrame in place and return None, so new_df will be None.
+# print('  after dropping rows with missing values:', new_df)  # Display the DataFrame after dropping rows with missing values
+
+# print(new_df)  # Display the DataFrame after dropping rows with missing values
+
+# print(df)  # Display the original DataFrame after dropping rows with missing values
+
+
+
+
+# 5️⃣ Missing Data Replace করা — fillna()
+
+# অনেক সময় data delete করতে চাই না। তখন missing value-এর জায়গায় নতুন value বসাই।
