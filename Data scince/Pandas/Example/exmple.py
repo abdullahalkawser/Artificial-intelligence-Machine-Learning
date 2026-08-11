@@ -33,5 +33,5 @@ print(s)
 m= df[(df["Age"] > 22) & (df["CGPA"] > 3.5)]
 
 h = df[(df["Age"] > 22) | (df["CGPA"] > 3.5)]
-print("Rows where Age is greater than 22 or CGPA is greater than 3.5:")
+print("Rows where Age is greater than 22 or CGPA is greater than 3.5:") #rows where Age is greater than 22 or CGPA is greater than 3.5:
 print(h)
