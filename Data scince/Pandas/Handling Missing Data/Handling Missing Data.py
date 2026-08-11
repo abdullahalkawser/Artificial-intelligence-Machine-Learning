@@ -43,3 +43,21 @@ df = pd.DataFrame(data)
 # 5️⃣ Missing Data Replace করা — fillna()
 
 # অনেক সময় data delete করতে চাই না। তখন missing value-এর জায়গায় নতুন value বসাই।
+
+
+print("Before filling missing values:")
+
+print(df)  
+
+
+print("\nAfter filling missing values:")
+
+df ['Age'] = df["Age"].fillna(23000000)  # Fill missing values in the 'Age' column with the mean of the column
+
+print(df)  # Display the DataFrame after filling missing values
+
+# Missing Age-এর জায়গায় 21 বসেছে।
+
+# কখন ব্যবহার করবে?
+
+# যখন তুমি জানো missing value-এর জায়গায় একটি reasonable value দেওয়া যায়।
