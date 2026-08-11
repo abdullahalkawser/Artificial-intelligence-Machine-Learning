@@ -26,7 +26,7 @@ print(df);
 df.insert(2, 'Country', ['USA', 'Canada', 'Mexico'])
 
 
-# df.insert(loc, column, value, allow_duplicates=False
+# df.insert(loc, column, value, allow_duplicates=False # loc → The index at which to insert the new column
 
 
 
