@@ -8,6 +8,7 @@ data = {
 
 df = pd.DataFrame(data)
 print("Original DataFrame:") # original DataFrame is printed to the console
+print(df)
 
 
 print(df)
