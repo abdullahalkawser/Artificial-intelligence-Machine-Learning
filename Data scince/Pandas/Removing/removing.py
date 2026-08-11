@@ -50,4 +50,4 @@ print(df)
 # axis=1 → Column
 # drop() → Remove
 # drop_duplicates() → Duplicate Remove
-# dropna() → Missing Data Remove
+# dropna() → Missing Data Removeew
