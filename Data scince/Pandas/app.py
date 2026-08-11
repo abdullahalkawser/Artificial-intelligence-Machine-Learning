@@ -7,7 +7,7 @@ data = {
 }
 
 df = pd.DataFrame(data)
-print("Original DataFrame:")
+print("Original DataFrame:") # original DataFrame is printed to the console
 
 
 print(df)
