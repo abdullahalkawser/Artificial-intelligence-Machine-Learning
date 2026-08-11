@@ -30,7 +30,7 @@ df.insert(2, 'Country', ['USA', 'Canada', 'Mexico'])
 
 
 
-print('After using INSERT() method:');
+print('After using INSERT() method:'); # insert() method is used to add a new column to the DataFrame at a specific index location. In this case, we are adding a new column 'Country' at index 2 with the values ['USA', 'Canada', 'Mexico'].
 
 
 
