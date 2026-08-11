@@ -16,7 +16,7 @@ print(df);
 
 # Adding a new column 'bonus' to the DataFrame
 
-df['bonus'] =df['Salary'] * 0.10
+df['bonus'] =df['Salary'] * 0.10 # adding a new column 'bonus' to the DataFrame by multiplying the 'Salary' column by 0.10  
 
 print('After adding new column:');
 print(df);
