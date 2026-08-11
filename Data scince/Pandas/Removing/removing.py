@@ -14,14 +14,14 @@ print(df)
 
 # Remove Age column
 
-df.drop("CGPA",inplace=True,axis=1)
+df.drop("CGPA",inplace=True,axis=1) # axis=1 means column, axis=0 means row
 
 print("After removing Age column:")
 print(df)
 
 # Remove multiple columns
 
-df.drop(["Department","Name"],inplace=True,axis=1)
+df.drop(["Department","Name"],inplace=True,axis=1) #inplace=True means modify the original DataFrame
 print("After removing multiple columns:")
 print(df)
 
