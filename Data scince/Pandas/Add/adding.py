@@ -5,7 +5,6 @@ data = {'Name': ['Alice', 'Bob', 'Charlie'],
         'City': ['New York', 'Los Angeles', 'Chicago'],
         "Salary": [50000, 60000, 70000]
 
-
          }
 
 df = pd.DataFrame(data)
