@@ -60,6 +60,43 @@ print("Minimum Cgpa:", df["CGPA"].min())
 
 print("Total Cgpa:", df["CGPA"].sum())
 
+print("Number of Students:", df["Name"].count())
+
+print("Standard Deviation of Cgpa:", df["CGPA"].std())
+
+# এটা statistical analysis-এ অনেক গুরুত্বপূর্ণ।
+
+# Simple idea:
+
+# Low std → values কাছাকাছি
+
+# High std → values বেশি spread out
+
+# ML/Data Science-এ std() খুব useful।
+
+print("Variance of Cgpa:", df["CGPA"].var()) #variance বের করে 
+
+# 12. একসাথে Multiple Aggregation
+
+# একই column-এর উপর অনেকগুলো aggregation একসাথে করা যায়।
+
+
+result = df["Age"].agg(["min", "max", "mean"])
+print(df[["Age", "CGPA"]].agg(["mean", "min", "max"]))
+
+print(result)
+
+# 15. Different Column-এ Different Aggregation
+
+# এটা খুব important concept।
+
+result = df.agg({
+    "Age": ["mean", "max"],
+    "CGPA": ["mean", "min", "max"]
+})
+
+
+print(result)
 
 
 
