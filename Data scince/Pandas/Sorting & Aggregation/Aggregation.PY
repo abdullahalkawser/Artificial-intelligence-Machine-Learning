@@ -139,3 +139,28 @@ print(result)
 
 
 # print(result)
+
+sum()   → Total
+mean()  → Average
+min()   → Smallest
+max()   → Largest
+count() → Number of non-null values
+std()   →
+ML/Data Science-এর জন্য সবচেয়ে বেশি মনে রাখবে:
+sum()
+mean()
+median()
+min()
+max()
+count()
+std()
+nunique()
+agg()
+groupby() + agg()
+
+সবচেয়ে important combination:
+
+df.groupby("Category").agg({
+    "Sales": ["sum", "mean", "max"],
+    "Product": "count"
+})
