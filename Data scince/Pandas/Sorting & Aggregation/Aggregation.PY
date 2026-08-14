@@ -99,8 +99,43 @@ result = df.agg({
 print(result)
 
 
+# groupby() + Aggregation 🔥
+
+# এটাই Pandas aggregation-এর সবচেয়ে important অংশগুলোর একটি।
+
+
+datas = {
+    "Name": ["Rahim", "Karim", "Sakib", "Nabil", "Hasan", "Rafi"],
+    "Department": ["CSE", "CSE", "EEE", "EEE", "CSE", "CSE"],
+    "CGPA": [3.50, 3.80, 3.20, 3.60, 3.90, 3.70]
+}
+
+dfs = pd.DataFrame(datas)
+
+result = dfs.groupby("Department")["CGPA"].mean()
+
+print(result)
+
+
+# 17. groupby() + Multiple Aggregation
+
+
+result = df.groupby("Department")["CGPA"].agg(
+    ["mean", "min", "max"]
+)
+
+print(result)
 
 
 
+# 18. GroupBy + Different Columns
+
+# আরও powerful example:
+
+# result = df.groupby("Department").agg({
+#     "CGPA": ["mean", "max"],
+#     "Name": "count"
+# })
 
 
+# print(result)
