@@ -7,6 +7,7 @@ plt.plot(x, y)
 plt.title("Student Marks")
 plt.xlabel("Student")
 plt.ylabel("Marks of a student scored in the exam")
+plt.grid() # Add grid for better readability
 
 
 plt.show()
