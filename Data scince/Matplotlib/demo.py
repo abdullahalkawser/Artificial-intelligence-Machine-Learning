@@ -1,3 +1,14 @@
+# 1. Matplotlib কী?
+
+# Matplotlib = Python দিয়ে data-এর graph/chart তৈরি করার library।
+
+# 🧠 Shortcut:
+
+# Data → Matplotlib → Visualization
+
+# ML-এ data বুঝতে, pattern দেখতে, trend দেখতে Matplotlib ব্যবহার হয়।
+
+
 import matplotlib.pyplot as plt
 
 x = [1, 2, 3, 4, 5]
@@ -12,3 +23,4 @@ plt.plot(x, y, marker="*") # Add markers to the data points
 
 
 plt.show()
+
