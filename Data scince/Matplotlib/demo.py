@@ -24,3 +24,32 @@ plt.plot(x, y, marker="*") # Add markers to the data points
 
 plt.show()
 
+
+# সবচেয়ে গুরুত্বপূর্ণ Shortcuts
+# plt.plot()
+
+# ➡️ Line graph
+
+# plt.title()
+
+# ➡️ Graph-এর নাম
+
+# plt.xlabel()
+
+# ➡️ X-axis-এর নাম
+
+# plt.ylabel()
+
+# ➡️ Y-axis-এর নাম
+
+# plt.grid()
+
+# ➡️ Grid দেখাও
+
+# plt.show()
+
+# ➡️ Graph দেখাও
+
+# marker="o"
+
+# ➡️ Data point দেখাও
