@@ -1,3 +1,5 @@
+
+
 import matplotlib.pyplot as plt
 
 subjects = ["Python", "Pandas", "NumPy", "ML"]
@@ -20,14 +22,5 @@ plt.ylabel("Hours")
 
 plt.show()
 
-# যখন category compare করতে হবে। tkhn bar chat use korte hbe 
+# যখন category compare করতে হবে। tkhn bar chat use kortehbe S
 
-# Bar Chart খুব বেশি ব্যবহার করবে:
-
-# 📊 Category comparison
-# 📊 Feature importance
-# 📊 Class distribution
-# 📊 Sales comparison
-# 📊 Student performance
-# 📊 Product comparison
-# 📊 Frequency/count
