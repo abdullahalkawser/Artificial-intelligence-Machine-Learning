@@ -62,3 +62,9 @@ plt.show()
 # marker="o"
 
 # ➡️ Data point দেখাও
+
+
+
+
+
+
