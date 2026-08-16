@@ -5,7 +5,7 @@ y1 = [10, 20, 15, 30, 25]
 y2 = [5, 15, 25, 20, 35]
 
 # Figure 1
-plt.figure()
+plt.figure() #alada file eopen hbe 
 plt.plot(x, y1, 'b^--')
 plt.plot(x,y2, 'r*--')
 plt.title("Student 1")
