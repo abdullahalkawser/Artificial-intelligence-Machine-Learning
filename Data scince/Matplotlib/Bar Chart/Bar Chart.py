@@ -1,4 +1,12 @@
+# Bar Chart খুব বেশি ব্যবহার করবে:
 
+# 📊 Category comparison
+# 📊 Feature importance
+# 📊 Class distribution
+# 📊 Sales comparison
+# 📊 Student performance
+# 📊 Product comparison
+# 📊 Frequency/count
 
 import matplotlib.pyplot as plt
 
