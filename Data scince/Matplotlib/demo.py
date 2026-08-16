@@ -14,13 +14,22 @@ import matplotlib.pyplot as plt
 x = [1, 2, 3, 4, 5]
 y = [10, 20, 15, 30, 25]
 
-plt.plot(x, y)
-plt.title("Student Marks")
+# plt.plot(x, y)
+plt.plot(x, label = "x marks ", color = 'red',linewidth = 2 ,marker = "*", linestyle = "--", markersize = '20')
+plt.plot(y,'b^--', label = "y marks",  markersize=12)
+plt.title("Student Marks",  fontdict={
+        "family": "serif",
+        "color": "red",
+        "size": 20,
+        "weight": "bold"
+    }) 
 plt.xlabel("Student")
 plt.ylabel("Marks of a student scored in the exam")
-plt.grid() # Add grid for better readability
-plt.plot(x, y, marker="*", linestyle="dashed") # Add markers to the data points
+# plt.grid() # Add grid for better readability
+# plt.plot(x, y, marker="*", linestyle="dashed") # Add markers to the data points
 
+
+plt.legend(loc = "upper right")
 
 plt.show()
 

@@ -14,6 +14,10 @@ plt.title("Learning Hours")
 plt.xlabel("Subjects")
 plt.ylabel("Hours")
 
+
+
+
+
 plt.show()
 
 # যখন category compare করতে হবে। tkhn bar chat use korte hbe 
