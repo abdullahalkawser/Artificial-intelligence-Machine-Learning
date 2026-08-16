@@ -4,8 +4,8 @@ subjects = ["Python", "Pandas", "NumPy", "ML"]
 hours = [10, 8, 6, 4]
 colors = ["red", "blue", "green", "orange"]
 
-# plt.bar(subjects, hours, color=colors)
-plt.barh(subjects, hours, color=colors) # horizontal bar chart
+plt.bar(subjects, hours, color=colors)
+# plt.barh(subjects, hours, color=colors) # horizontal bar chart
 
 plt.title("Learning Hours")
 plt.xlabel("Subjects")
