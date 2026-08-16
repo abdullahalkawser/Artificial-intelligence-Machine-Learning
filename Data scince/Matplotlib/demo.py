@@ -19,7 +19,7 @@ plt.title("Student Marks")
 plt.xlabel("Student")
 plt.ylabel("Marks of a student scored in the exam")
 plt.grid() # Add grid for better readability
-plt.plot(x, y, marker="*") # Add markers to the data points
+plt.plot(x, y, marker="*", linestyle="dashed") # Add markers to the data points
 
 
 plt.show()
