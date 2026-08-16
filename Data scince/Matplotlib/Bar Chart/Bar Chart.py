@@ -7,6 +7,9 @@ colors = ["red", "blue", "green", "orange"]
 plt.bar(subjects, hours, color=colors)
 # plt.barh(subjects, hours, color=colors) # horizontal bar chart
 
+plt.xticks(rotation=45) #atribute use kore x-axis er value gulo ke rotate kora jay
+plt.yticks(rotation=45) #atribute use kore y-axis er value gulo ke rotate kora jay
+
 plt.title("Learning Hours")
 plt.xlabel("Subjects")
 plt.ylabel("Hours")
