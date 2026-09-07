@@ -22,7 +22,7 @@ plt.title("Student Marks",  fontdict={
         "color": "red",
         "size": 20,
         "weight": "bold"
-    }) 
+    })  
 plt.xlabel("Student")
 plt.ylabel("Marks of a student scored in the exam")
 # plt.grid() # Add grid for better readability

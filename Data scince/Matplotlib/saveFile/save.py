@@ -20,4 +20,4 @@ plt.savefig("student_marks.svg")
 # dpi=100   → normal
 # dpi=150   → good
 # dpi=300   → high quality
-# dpi=600   → very high quality
+# dpi=600   → very high quality  insure korte hbe 
