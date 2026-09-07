@@ -30,11 +30,11 @@ plt.ylabel("Marks")
 
 # legend() displays the labels given to each plot.
 # legend() প্রতিটি line-এর নাম বা পরিচয় দেখায়।
-plt.legend()
+plt.legend('upper left')
 
 # grid() adds guide lines, making values easier to read.
 # grid() graph-এ guide line যোগ করে, ফলে value পড়া সহজ হয়।
-plt.grid(True)
+plt.grid( )
 
 # Create a second independent figure.
 # দ্বিতীয় একটি আলাদা figure তৈরি করা হচ্ছে।
@@ -47,7 +47,9 @@ plt.title("Student 2")
 plt.xlabel("Exam")
 plt.ylabel("Marks")
 plt.legend()
+plt.legend(["x", "y"], loc="upper left")
 
 # show() opens all created figures on the screen.
 # show() তৈরি করা সব graph screen-এ দেখায়।
+
 plt.show()
