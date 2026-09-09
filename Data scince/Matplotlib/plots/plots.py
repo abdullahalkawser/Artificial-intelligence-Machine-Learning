@@ -34,7 +34,7 @@ plt.legend('upper left')
 
 # grid() adds guide lines, making values easier to read.
 # grid() graph-এ guide line যোগ করে, ফলে value পড়া সহজ হয়।
-plt.grid( )
+plt.grid( color='gray', linestyle='--', linewidth=0.5)
 
 # Create a second independent figure.
 # দ্বিতীয় একটি আলাদা figure তৈরি করা হচ্ছে।
@@ -46,6 +46,12 @@ plt.plot(x, y2, "ro-", label="Student 2")
 plt.title("Student 2")
 plt.xlabel("Exam")
 plt.ylabel("Marks")
+
+
+
+
+plt.xticks([1, 2, 3, 4, 5], ["Exam 1", "Exam 2", "Exam 3", "Exam 4", "Exam 5"])
+plt.yticks([5, 10, 15, 20, 25, 30, 35], ["5", "10", "15", "20", "25", "30", "35"])
 plt.legend()
 plt.legend(["x", "y"], loc="upper left")
 
