@@ -14,6 +14,7 @@ plt.plot(t, t, 'r--')
 plt.xlabel('u axis label')
 plt.ylabel('m axis label')
 plt.title('fist line graph')
+plt.tight_layout() # টাইটেল ও লেবেল গুলোর মাঝে জায়গা বাড়াবে
 
 
 # plt.show()
