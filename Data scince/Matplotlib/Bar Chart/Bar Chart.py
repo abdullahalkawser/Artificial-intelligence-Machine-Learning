@@ -24,6 +24,7 @@ plt.title("Learning Hours")
 plt.xlabel("Subjects")
 plt.ylabel("Hours")
 
+plt.grid(axis="y", color="gray", linestyle="--", linewidth=0.5) #grid add kora jay 
 
 
 
