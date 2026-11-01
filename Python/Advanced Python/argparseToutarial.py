@@ -34,7 +34,7 @@ if __name__ == "__main__":
         result = n1 - n2 - n3
     elif args.operetion == "mul":
         result = n1 * n2 * n3
-    elif args.operetion == "div":
+    elif args.operetion == "division":
 
 
 

@@ -1,4 +1,4 @@
-import numpy as np
+mport numpy as np
 
 a = np.arange(1,13)  # 1 থেকে 12 পর্যন্ত সংখ্যা তৈরি করে।
 # arange(start, stop) ফাংশন start থেকে শুরু করে stop-1 পর্যন্ত সংখ্যা তৈরি করে।
