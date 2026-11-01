@@ -28,7 +28,7 @@ if __name__ == "__main__":
     result = None;
 
     # অপারেশন অনুযায়ী কাজ করা
-    if args.operetion == "add":
+    if args.operetion == "addtion":
         result = n1 + n2 + n3
     elif args.operetion == "sub":
         result = n1 - n2 - n3
