@@ -10,6 +10,7 @@ sns.scatterplot(
     y='region',
     hue='timepoint'
 )
+sns.despine(left= trure)
 
 sns.despine(left=True, right=True, offset=10)
 
